@@ -189,7 +189,7 @@
 <p>Next, I implemented a texture shader. The goal of this shader is to color fragments according to values determined by a texture instead of some lighting model. The shader samples the corresponding coordinates on the texture file and sets the color of the fragment to be the sampled results.</p>
 
 <img src="images/p5s1.JPG" width="1000px" />
-<figcaption align="middle">The Eye of Sauron is significantly scarier in 2D</figcaption>
+<figcaption align="middle">The Eye of Sauron was significantly scarier in 2D</figcaption>
 
 <p>In addition to modifying the color of a fragment, shaders can modify other attributes such as the normal or the position of a vertex. The Bump shader uses a texture to perturb the normal of a fragment. As a result, unique lighting effects are achieved when later shading the fragment according to the Blinn-Phong model. The normal of the surface is determined by the change in values in the texture to reflect the direction of the change, while areas with similar values remain mostly unchanged. Since the normal of the fragment is calculated in local space, the shader transforms it into the model space by applying the tangent-bitangent-normal matrix.</p>
 
